@@ -17,7 +17,7 @@ async def on_message(message):
 
     try:
         result = translator.translate_text(message.content, target_lang="en")
-        await message.channel.send(f'Translated to Turkish: {result.text}')
+        await message.channel.send(f'Translated to English: {result.text}')
     except Exception as e:
         await message.channel.send(f'Error: {e}')
 
